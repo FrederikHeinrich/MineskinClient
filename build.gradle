@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 
 group = 'io.freddi'
@@ -11,13 +10,10 @@ targetCompatibility = 11
 
 repositories {
     mavenCentral()
+    maven { url "https://jitpack.io"  }
 }
 
 dependencies {
     //Gson
     implementation 'com.google.code.gson:gson:2.9.1'
-}
-
-shadowJar{
-    relocate 'com.google', 'io.freddi.mineskin.com.google'
 }
