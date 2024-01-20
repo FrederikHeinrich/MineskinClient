@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'io.freddi'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //Gson
+    implementation 'com.google.code.gson:gson:2.9.1'
+}
+
+shadowJar{
+    relocate 'com.google', 'io.freddi.mineskin.com.google'
+}
