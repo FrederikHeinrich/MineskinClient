@@ -1,4 +1,6 @@
 # MineskinClient
+[![](https://jitpack.io/v/FrederikHeinrich/MineskinClient.svg)](https://jitpack.io/#FrederikHeinrich/MineskinClient)
+
 Client for [api.mineskin.org](https://mineskin.org/)
 
 The original project: [MineskinClient by Inventivetalent](https://github.com/InventivetalentDev/MineskinClient)
@@ -30,32 +32,5 @@ try {
     e.printStackTrace();
 } catch (ServerErrorException e) {
     e.printStackTrace();
-}
-```
-
-## Maven
-```xml
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io/</url>
-    </repository>
-</repositories>
-<dependencies>
-    <dependency>
-	    <groupId>com.github.FrederikHeinrich</groupId>
-	    <artifactId>MineskinClient</artifactId>
-	    <version>1.0.0-SNAPSHOT</version>
-	</dependency>
-</dependencies>
-```
-
-## Gradle
-```groovy
-repositories {
-    maven { url 'https://jitpack.io' }
-}
-dependencies {
-    implementation 'com.github.FrederikHeinrich:MineskinClient:1.0.0-SNAPSHOT'
 }
 ```
